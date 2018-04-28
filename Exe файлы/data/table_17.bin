@@ -1,0 +1,40 @@
+{
+  "TaskId": 17,
+  "Type": 0,
+  "StatesCount": 4,
+  "InputsCount": 2,
+  "OutputsCount": 2,
+  "ContentFirstTable": [
+    {
+      "x\\a": "x1",
+      "a1": "a3",
+      "a2": "a1",
+      "a3": "a4",
+      "a4": "-"
+    },
+    {
+      "x\\a": "x2",
+      "a1": "a1",
+      "a2": "a2",
+      "a3": "-",
+      "a4": "a1"
+    }
+  ],
+  "ContentSecondTable": [
+    {
+      "x\\a": "x1",
+      "a1": "y1",
+      "a2": "y2",
+      "a3": "-",
+      "a4": "y1"
+    },
+    {
+      "x\\a": "x2",
+      "a1": "-",
+      "a2": "y1",
+      "a3": "y2",
+      "a4": "-"
+    }
+  ],
+  "ObjectDebugId": 3
+}

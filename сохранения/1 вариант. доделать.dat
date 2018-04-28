@@ -1,0 +1,154 @@
+{
+  "$id": "1",
+  "Nodes": [
+    {
+      "$id": "2",
+      "Name": "a1",
+      "Output": "y1",
+      "X": 379.0,
+      "Y": 113.03999999999999,
+      "ZIndex": 16,
+      "Size": "50,78",
+      "InputConnectors": [],
+      "OutputConnectors": [
+        {
+          "$id": "3",
+          "Name": "Out1",
+          "Type": 2,
+          "Angle": 166.27303002005669,
+          "IsConnected": true,
+          "IsConnectionAttached": true,
+          "AttachedConnections": [
+            {
+              "$id": "4",
+              "SourceConnector": {
+                "$ref": "3"
+              },
+              "DestConnector": {
+                "$id": "5",
+                "Name": "In1",
+                "Type": 1,
+                "Angle": 286.27303002005669,
+                "IsConnected": true,
+                "IsConnectionAttached": true,
+                "AttachedConnections": [
+                  {
+                    "$ref": "4"
+                  }
+                ],
+                "ParentNode": {
+                  "Name": "a2",
+                  "Output": "y2",
+                  "X": 218.0,
+                  "Y": 267.04,
+                  "ZIndex": 19,
+                  "Size": "50,78",
+                  "InputConnectors": [
+                    {
+                      "$ref": "5"
+                    }
+                  ],
+                  "OutputConnectors": [],
+                  "AttachedConnections": [
+                    {
+                      "$ref": "4"
+                    }
+                  ],
+                  "IsSelected": false,
+                  "ObjectDebugId": 68
+                },
+                "Hotspot": "260.304834870744,305.441410757815",
+                "ObjectDebugId": 71
+              },
+              "SourceConnectorHotspot": "393.14265559499,178.379147456362",
+              "DestConnectorHotspot": "260.304834870744,305.441410757815",
+              "Points": [
+                "393.14265559499,178.379147456362",
+                "295.229553222656,217.582458496094",
+                "261.948547363281,285.098876953125",
+                "260.304834870744,305.441410757815"
+              ],
+              "LabelPoint": "295.229553222656,217.582458496094,0,0",
+              "Input": "x1",
+              "Output": "y1",
+              "ObjectDebugId": 72
+            }
+          ],
+          "ParentNode": {
+            "$ref": "2"
+          },
+          "Hotspot": "393.14265559499,178.379147456362",
+          "ObjectDebugId": 70
+        }
+      ],
+      "AttachedConnections": [
+        {
+          "$ref": "4"
+        }
+      ],
+      "IsSelected": false,
+      "ObjectDebugId": 66
+    },
+    {
+      "$id": "6",
+      "Name": "a4",
+      "Output": "y2",
+      "X": 630.0,
+      "Y": 389.03999999999996,
+      "ZIndex": 20,
+      "Size": "50,78",
+      "InputConnectors": [],
+      "OutputConnectors": [],
+      "AttachedConnections": [],
+      "IsSelected": false,
+      "ObjectDebugId": 67
+    },
+    {
+      "$id": "7",
+      "Name": "a2",
+      "Output": "y2",
+      "X": 218.0,
+      "Y": 267.04,
+      "ZIndex": 19,
+      "Size": "50,78",
+      "InputConnectors": [
+        {
+          "$ref": "5"
+        }
+      ],
+      "OutputConnectors": [],
+      "AttachedConnections": [
+        {
+          "$ref": "4"
+        }
+      ],
+      "IsSelected": false,
+      "ObjectDebugId": 68
+    },
+    {
+      "$id": "8",
+      "Name": "a3",
+      "Output": "y3",
+      "X": 601.0,
+      "Y": 84.039999999999992,
+      "ZIndex": 9,
+      "Size": "50,78",
+      "InputConnectors": [],
+      "OutputConnectors": [],
+      "AttachedConnections": [],
+      "IsSelected": false,
+      "ObjectDebugId": 69
+    }
+  ],
+  "Connections": [
+    {
+      "$ref": "4"
+    }
+  ],
+  "NumberOfStates": 4,
+  "NumberOfInputs": 3,
+  "NumberOfOutputs": 3,
+  "TaskNumber": 1,
+  "Type": 1,
+  "ObjectDebugId": 21
+}

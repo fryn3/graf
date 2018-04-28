@@ -1,0 +1,40 @@
+﻿<Window
+    x:Class="SampleCode.TableWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SampleCode"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Таблица переходов автомата"
+    MinWidth="250"
+    MinHeight="150"
+    MaxWidth="800"
+    MaxHeight="400"
+    DataContext="{Binding RelativeSource={RelativeSource Self}}"
+    ShowActivated="False"
+    ShowInTaskbar="False"
+    SizeToContent="WidthAndHeight"
+    WindowStyle="ToolWindow"
+    mc:Ignorable="d">
+
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="18" />
+            <RowDefinition Height="18" />
+            <RowDefinition Height="166*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Name="TaskIdTextBlock" Grid.Row="0" />
+
+        <TextBlock Name="TypeTextBlock" Grid.Row="1" />
+
+        <DataGrid
+            Name="TableDataGrid"
+            Grid.Row="2"
+            HeadersVisibility="None"
+            IsEnabled="False"
+            IsReadOnly="True" />
+
+    </Grid>
+
+</Window>

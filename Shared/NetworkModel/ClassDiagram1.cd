@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NetworkModel.ConnectionViewModel">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAgKAABIAgAAAAAAKAAYAHAAQABACEAAAAgCAAEI=</HashCode>
+      <FileName>ConnectionViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DestConnector" />
+      <Property Name="SourceConnector" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NetworkModel.ConnectorViewModel">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAABAAAIAEAQACAAAABAACVAQAABQAAA=</HashCode>
+      <FileName>ConnectorViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NetworkModel.NetworkViewModel">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <AssociationLine Name="Nodes" Type="NetworkModel.NodeViewModel" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="3.25" />
+        <Point X="3" Y="3.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAwACAAEBAAAAAQAAAAAAAgAACBIAAAIQAAACAAIAA=</HashCode>
+      <FileName>NetworkViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Connections" />
+      <Property Name="Nodes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="NetworkModel.NodeViewModel">
+    <Position X="1.5" Y="1" Width="1.5" />
+    <AssociationLine Name="InputConnectors" Type="NetworkModel.ConnectorViewModel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="2.438" />
+        <Point X="3.765" Y="2.438" />
+        <Point X="3.765" Y="0.486" />
+        <Point X="10" Y="0.486" />
+        <Point X="10" Y="0.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="OutputConnectors" Type="NetworkModel.ConnectorViewModel" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="2.062" />
+        <Point X="3.572" Y="2.062" />
+        <Point X="3.572" Y="0.357" />
+        <Point X="10.25" Y="0.357" />
+        <Point X="10.25" Y="0.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.363" Y="0.096" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAABQQAAAkAUAAIAJAAQACQEUAAABEAJwAAAAYAA=</HashCode>
+      <FileName>NodeViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="InputConnectors" />
+      <Property Name="AttachedConnections" />
+      <Property Name="OutputConnectors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Enum Name="NetworkModel.ConnectorType">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>ConnectorType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NetworkModel.NetworkType">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NetworkType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
